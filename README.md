@@ -1,19 +1,15 @@
 # kaggle_analysis
 This is a repository to save data science analysis practices.
 
-Hello world you motherfucker!
-
-
 ## Titanic Project
 Sections:
+- Define the problem and understand the data
+- Data Cleaning
 - Exploratory Data Analysis
   - Single Variable Analysis
   - Multiple Variable Analysis
-- Data Cleaning
+  - Correlation Analysis
 - Feature Engineering
 - Model Selection
-
-Problems:
-1. For 'Pclass'
-  - should we use one-hash or ranked number to craete dummy variable?
-  - is there any difference for the model output accuracy?
+- Validation
+- Model Improvement
