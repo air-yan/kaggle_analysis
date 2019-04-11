@@ -40,7 +40,7 @@ def distplot_w_stats(original_df):
             else:
                 column = 0
                 row +=1
-    if number_of_plots <= 2:
+    elif number_of_plots == 2:
          for i, c in enumerate(df.columns):
             mean=df[c].mean()
             median=df[c].median()
@@ -53,6 +53,25 @@ def distplot_w_stats(original_df):
             axes[column].axvline(median, color='g', linestyle='-')
             axes[column].axvline(mode, color='b', linestyle='-')
             axes[column].legend({'Mean':mean,'Median':median,'Mode':mode})
+
+            if column == 0:
+                column += 1
+            else:
+                column = 0
+                row +=1
+    else:
+        for i, c in enumerate(df.columns):
+            mean=df[c].mean()
+            median=df[c].median()
+            mode=df[c].mode().get_values()[0]
+
+            sns.distplot(df[c], ax=axes)
+            sns.despine()
+
+            axes.axvline(mean, color='r', linestyle='--')
+            axes.axvline(median, color='g', linestyle='-')
+            axes.axvline(mode, color='b', linestyle='-')
+            axes.legend({'Mean':mean,'Median':median,'Mode':mode})
 
             if column == 0:
                 column += 1
