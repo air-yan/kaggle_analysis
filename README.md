@@ -14,6 +14,7 @@ Includes:
   - Creating new features
   - Transform existing features
 - Model Selection
+  - K fold cross validation
   - Feature Importance
   - Recall and Precision
   - Tuning Hyper parameter
