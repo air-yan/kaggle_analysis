@@ -2,14 +2,19 @@
 This is a repository to save data science analysis practices.
 
 ## Titanic Project
-Sections:
-- Define the problem and understand the data
+Includes:
 - Data Cleaning
+  - Missing data
+  - Outliers
 - Exploratory Data Analysis
   - Single Variable Analysis
   - Multiple Variable Analysis
   - Correlation Analysis
 - Feature Engineering
+  - Creating new features
+  - Transform existing features
 - Model Selection
-- Validation
-- Model Improvement
+  - Feature Importance
+  - Recall and Precision
+  - Tuning Hyper parameter
+  - Ensembling Vote
